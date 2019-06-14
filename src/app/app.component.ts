@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+//import { Post } from '.post.ts'
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  posts: Post[];
   title = 'reddit-clone';
+
+  constructor() {
+    this.posts = [
+      new Post('Sweet Post', 'awesome.com', 5)
+    ];
+  }
 }
