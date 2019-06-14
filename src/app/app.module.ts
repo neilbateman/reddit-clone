@@ -10,7 +10,9 @@ import { PostComponent } from './post/post.component';
     PostComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule,
+    HttpModule
   ],
   providers: [],
   bootstrap: [AppComponent]
