@@ -17,6 +17,14 @@ export class PostComponent implements OnInit {
     8)
    }
 
+   upVote(): boolean{
+     this.post.upVote();
+     return false;
+   }
+   downVote(): boolean{
+     this.post.downVote();
+     return false;
+   }
   ngOnInit() {
   }
 
