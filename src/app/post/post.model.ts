@@ -1,5 +1,3 @@
-// import { Post} from '../post';
-
 export class Post {
   title: string;
   link: string;
@@ -10,6 +8,11 @@ export class Post {
   this.link = link;
   this.votes = votes || 0;
 }
+
+  webLink(): string {
+    let link: string = this.link.split('//')[1];
+    return link.split('/')[0];
+  }
   upVote(): void {
     this.votes +=1;
   }
@@ -17,4 +20,6 @@ export class Post {
   downVote(): void {
     this.votes +=1;
   }
+
+
 }

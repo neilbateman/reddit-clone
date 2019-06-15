@@ -4,7 +4,9 @@ import { Post } from './post.model';
 @Component({
   selector: 'app-post',
   templateUrl: './post.component.html',
-  styleUrls: ['./post.component.css']
+  styleUrls: ['./post.component.css'],
+  host: { class: "row" }
+
 })
 export class PostComponent implements OnInit {
   @Input() post: Post;
