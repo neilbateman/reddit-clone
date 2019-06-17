@@ -12,14 +12,15 @@ export class AppComponent {
 
   constructor() {
     this.posts = [
-      new Post('Sweet Post', 'awesome.com', 5),
-      new Post('Another Fab Post','cantbeatit.com', 7),
-      new Post('Front Page Material', 'reddit.com', 3),
-      new Post('Second Page Material', 'reddit.com', 3),
+      new Post('Next time someone calls you “bro” send them this.', 'awesome.com', 5),
+      new Post('Another Fab Post','cantbeatit.com', 4),
+      new Post('Front Page Material', 'reddit.com', 3)
     ];
   }
   makePost(title: HTMLInputElement, link: HTMLInputElement): boolean {
     this.posts.push(new Post(title.value, link.value, 0));
+    title.value ="";
+    link.value ="";
     return false;
   }
   sortPosts(): Post[] {

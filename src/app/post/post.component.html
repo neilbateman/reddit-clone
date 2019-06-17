@@ -1,6 +1,7 @@
+<div class="ui container">
 
-<div class="four wide column center aligned votes">
-  <div class="ui statistic">
+<div class="two wide column center aligned votes">
+  <div class="ui container ">
     <div class="value">
       {{ post.votes }}
     </div>
@@ -9,23 +10,25 @@
     </div>
   </div>
 </div>
-<div class="twelve wide column">
-  <a class="ui large header" href="{{ link }}">
+<div class="twelve wide column segment">
+  <a class="ui meduim header" href="{{ link }}">
     {{ post.title }}
   </a>
   <div class="meta">({{ post.webLink() }})</div>
-  <ul class="ui big horizontal list voters">
+  <ul class="ui medium vertical list voters">
     <li class="item">
-      <a href (click)="voteUp()">
+      <a href (click)="upVote()">
         <i class="arrow up icon"></i>
           upvote
       </a>
     </li>
     <li class="item">
-      <a href (click)="voteDown()">
+      <a href (click)="downVote()">
         <i class="arrow down icon"></i>
           downvote
       </a>
     </li>
   </ul>
 </div>
+  <app-dash>
+</app-dash></div>
