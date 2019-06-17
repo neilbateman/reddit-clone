@@ -18,8 +18,6 @@ export class Post {
   }
 
   downVote(): void {
-    this.votes +=1;
+    this.votes -=1;
   }
-
-
 }
