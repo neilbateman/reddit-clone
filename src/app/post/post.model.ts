@@ -24,6 +24,4 @@ export class Post {
   downVote(): void {
     this.votes -=1;
   }
-
-
 }
