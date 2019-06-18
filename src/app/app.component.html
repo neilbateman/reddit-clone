@@ -13,7 +13,9 @@
     <label for="link">Post Link:</label>
     <input name="link" #newlink>
   </div>
+
   <button (click)="makePost(newtitle, newComment, newlink)"
+  <button (click)="makePost(newtitle, newlink)"
     class="ui button">
     Submit link
   </button>
