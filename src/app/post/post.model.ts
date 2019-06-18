@@ -1,10 +1,13 @@
 export class Post {
   title: string;
   link: string;
+  comment: string;
   votes: number;
 
-  constructor(title: string, link: string, votes?: number) {
+  constructor(title: string, link: string, comment: string, votes?: number) {
   this.title = title;
+  
+  this.comment = comment;
   this.link = link;
   this.votes = votes;
 }

@@ -10,12 +10,15 @@
                 </div>
               </div>
             </div>
-            <div class="twelve wide column segment">
-              <a class="ui meduim header" href="{{ link }}">
+            <div class="six wide column segment">
+              <a class="ui large header" href="{{ link }}">
                 {{ post.title }}
               </a>
-              <div class="meta">({{ post.webLink() }})</div>
-              <ul class="ui medium vertical list voters">
+              <a class="ui meduim header" href="{{ link }}">
+                {{ post.comment }}
+              </a><br>
+              <div class="ui small header">{{ post.webLink() }}</div>
+              <ul class="ui list voters">
                 <li class="item">
                   <a href (click)="upVote()">
                     <i class="arrow up icon"></i>

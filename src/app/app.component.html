@@ -6,19 +6,20 @@
     <input name="title" #newtitle>
   </div>
   <div class="field">
-    <label for="link">Link:</label>
+    <label for="comment">Comment:</label>
+    <input name="comment" #newComment>
+  </div>
+  <div class="field">
+    <label for="link">Post Link:</label>
     <input name="link" #newlink>
   </div>
-  <button (click)="addPost(newtitle, newlink)"
+  <button (click)="makePost(newtitle, newComment, newlink)"
     class="ui button">
     Submit link
   </button>
 </form>
+<div class="ui posts">
+  <div *ngFor="let post of sortPosts()">
+      <app-post [post]=post></app-post>
 
-<div class="ui grid posts">
-
-  <app-post
-    *ngFor="let post of sortPosts()"
-    [post]="post">
-  </app-post>
 </div>

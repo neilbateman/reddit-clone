@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Post } from './post.model';
+//import Post from "../../models/Post";
 
 @Component({
   selector: 'app-post',
@@ -14,7 +15,7 @@ export class PostComponent implements OnInit {
     this.post = new Post(
       'First Post',
       'http://reddit.com',
-    8)
+    'asdjf', 8)
    }
 
    upVote(): boolean{
