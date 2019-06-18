@@ -13,7 +13,6 @@
     <label for="link">Post Link:</label>
     <input name="link" #newlink>
   </div>
-
   <button (click)="makePost(newtitle, newComment, newlink)"
     class="ui button">
     Submit link
@@ -22,5 +21,4 @@
 <div class="ui posts">
   <div *ngFor="let post of sortPosts()">
       <app-post [post]=post></app-post>
-
 </div>
