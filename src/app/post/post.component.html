@@ -1,23 +1,27 @@
 <div class="ui six wide medium padding grid-container segment">
             <div class="ui four wide grid-container">
-            <div class="two wide column center aligned votes">
-              <div class="ui container ">
+            <!-- <div class="four wide column center aligned votes"> -->
+              <div class="four wide column center aligned votes">
                 <div class="value">
                   {{ post.votes }}
                 </div>
-                <div class="label">
+
+                <div class="ui large label">
                   Points
                 </div>
               </div>
-            </div>
+            <!-- //</div> -->
             <div class="six wide column segment">
-              <a class="ui large header" href="{{ link }}">
+              <a class="ui medium header">
                 {{ post.title }}
               </a>
-              <a class="ui meduim header" href="{{ link }}">
+              <div class="ui medium header">
                 {{ post.comment }}
-              </a><br>
-              <div class="ui small header">{{ post.webLink() }}</div>
+            </div>
+
+              <div class="ui small header">
+                {{ post.link }}
+              </div>
               <ul class="ui list voters">
                 <li class="item">
                   <a href (click)="upVote()">
