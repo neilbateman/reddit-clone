@@ -1,37 +1,34 @@
-<<<<<<< HEAD
-<div class="ui container">
-
-=======
->>>>>>> 6482f6b511a44f2454096fb27d29ff5232e9c6a0
-<div class="two wide column center aligned votes">
-  <div class="ui container ">
-    <div class="value">
-      {{ post.votes }}
-    </div>
-    <div class="label">
-      Points
-    </div>
-  </div>
-</div>
-<div class="twelve wide column segment">
-  <a class="ui meduim header" href="{{ link }}">
-    {{ post.title }}
-  </a>
-  <div class="meta">({{ post.webLink() }})</div>
-  <ul class="ui medium vertical list voters">
-    <li class="item">
-      <a href (click)="upVote()">
-        <i class="arrow up icon"></i>
-          upvote
-      </a>
-    </li>
-    <li class="item">
-      <a href (click)="downVote()">
-        <i class="arrow down icon"></i>
-          downvote
-      </a>
-    </li>
-  </ul>
-</div>
-  <app-dash>
-</app-dash></div>
+<div class="ui six wide medium padding grid-container segment">
+            <div class="ui four wide grid-container">
+            <div class="two wide column center aligned votes">
+              <div class="ui container ">
+                <div class="value">
+                  {{ post.votes }}
+                </div>
+                <div class="label">
+                  Points
+                </div>
+              </div>
+            </div>
+            <div class="twelve wide column segment">
+              <a class="ui meduim header" href="{{ link }}">
+                {{ post.title }}
+              </a>
+              <div class="meta">({{ post.webLink() }})</div>
+              <ul class="ui medium vertical list voters">
+                <li class="item">
+                  <a href (click)="upVote()">
+                    <i class="arrow up icon"></i>
+                      upvote
+                  </a>
+                </li>
+                <li class="item">
+                  <a href (click)="downVote()">
+                    <i class="arrow down icon"></i>
+                      downvote
+                  </a>
+                </li>
+              </ul>
+            </div>
+            </div>
+            </div>
