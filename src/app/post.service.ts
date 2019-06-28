@@ -1,3 +1,4 @@
+
 import { Injectable } from '@angular/core';
 import { Post } from './post.model';
 //import { ALBUMS } from './mock-posts';
@@ -20,3 +21,4 @@ export class PostService {
     return this.database.object('posts/' + postId);
   }
 }
+
