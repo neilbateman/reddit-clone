@@ -1,14 +1,22 @@
 import { Injectable } from '@angular/core';
-import { POSTS } from './mock-db';
-import { Post } from './post/post.model';
-@Injectable({
-  providedIn: 'root'
-})
+import { Post } from './post.model';
+//import { ALBUMS } from './mock-posts';
+import {AngularFireDatabase, FirebaseListObservable } from 'angularfire2/database';
+@Injectable()
 export class PostService {
-
-  constructor() { }
+  posts: FirebaseListObservable<any[]>;
+  constructor(private database: AngularFireDatabase) {
+    this.posts = database.list('posts');
+  }
 
   getPosts() {
-    return POSTS;
+    return this.posts;
+  }
+
+  addPost(newPost: Post) {
+    this.posts.push(newPost);
+  }
+  getPostById(postId: string){
+    return this.database.object('posts/' + postId);
   }
 }
