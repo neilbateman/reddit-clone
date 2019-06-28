@@ -3,7 +3,7 @@ Project currently deployed at https://online-store-2a26f.firebaseapp.com/
 This is an exercise in Angular, an attempt to emulate the structure of the popular website Reddit.com.
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.2.
 
-![post image](/src/assets/images/postimage.png)
+![post image](/src/assets/img/postimage.png)
 
 ## Development server
 
